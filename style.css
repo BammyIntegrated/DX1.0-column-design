@@ -27,6 +27,9 @@ body{
     background-position: bottom left;
     height: 400px;
     width: 50%;
+    display: flex;
+    position: relative;
+
 }
 .smart-line{
     background: tomato;
@@ -52,4 +55,86 @@ span{
     color: white;
     /* This padding here is 20px for top&buttom while 0 for left & right */
     padding: 20px 0;
+    width: 100%;
+    z-index: 5;
 }
+/* background overlay */
+.bg-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(225, 99, 71, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* Positioning --Relative position [absolute] */
+/* second section */
+.second-section{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.secondsection-left{
+    width: 350px;
+    height: 360px;
+    background: #d9d9d9;
+    padding: 40px 25px;
+    text-align: center;
+}
+/* For Paragraph in secondsection-left */
+p{
+    margin: 20px 0;
+    text-align: left;
+}
+.secondsection-right{
+    width: 380px;
+    height: 420px;
+    margin-left: 7px;
+    background: tomato;
+}
+/* Image rest */
+img{
+    width: 100%;
+    height: 100%;
+}
+/* Third section */
+.thirdsection{
+    background: #d9d9d9;
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.thirdsection-left,
+.thirdsection-right{
+    width: 400px;
+    height: 420px;
+}
+.thirdsection-left{
+    background: skyblue;
+}
+.thirdsection-right{
+    background: #ff6347;
+    padding: 20px 70px;
+
+}
+/* Footer section */
+.footer{
+    background: #ff6347;
+    padding: 20px 0;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+    font-size: medium;
+}
+.iconholder{
+    color: white;
+    /* font-size: 40px; */
+    margin-left: 15px;
+}
+
